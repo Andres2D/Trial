@@ -171,6 +171,7 @@ function toggleNavbar() {
         hamIcon.classList.remove('active');
     }
 
+    if (window.innerWidth <= 768) {
     // Animate the navbar links based on their visibility
     if (isNavbarVisible) {
       navbarLinks.style.right = '0'; // Display the navbar links
@@ -188,6 +189,7 @@ function toggleNavbar() {
       });
   }
 }
+}
 
 // Add an event listener to the hamburger icon to call toggleNavbar when clicked
 const hamIcon = document.querySelector('.ham');
@@ -200,5 +202,7 @@ navLinks.forEach(function (link) {
         toggleNavbar(); // Hide the navbar links when a link is clicked
     });
 });
+
+
 
 

@@ -6,7 +6,8 @@
   <title>Joys Homes & Developers</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="icon" href="./jj-14.png" type="image/x-icon">
 </head>
 <body> 
  <div class="container">
@@ -18,6 +19,18 @@
       </div>
       <div class="brand-name">JOYS HOMES & DEVELOPERS</div>
     </div>
+    <div class="nav">
+      <div class="nav__content">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="#home">Home</a></li>
+          <li class="nav__list-item"><a href="#about-us-section">About Us</a></li>
+          <li class="nav__list-item"><a href="#projects">Projects</a></li>
+          <li class="nav__list-item"><a href="#services">Services</a></li>
+          <li class="nav__list-item"><a href="#contact">Contact US</a></li>
+        </ul>
+      </div>
+    </div>
+
     <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
       <path
             class="line top"
@@ -28,7 +41,7 @@
       <path
             class="line bottom"
             d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
-    </svg>
+    </svg>  
     <div class="navbar-links">
       <a href="#home">Home</a>
       <a href="#about-us-section">About Us</a>
@@ -39,84 +52,112 @@
   </div>
 
   <div id="home">
-    <div id="carousel-container">
-      <div id="image-carousel">
-        <img class="carousel-image" src="./1.jpg" alt="Image 1">
-        <img class="carousel-image" src="./2.jpg" alt="Image 2">
-        <img class="carousel-image" src="./4.jpg" alt="Image 3">
-        <img class="carousel-image" src="./6.jpg" alt="Image 4">
-        <img class="carousel-image" src="image5.jpg" alt="Image 5">
+    <div class="swiper mySwiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(./1.jpg);"></div>
+        <div class="swiper-slide" style="background-image: url(./2.jpg);"></div>
+        <div class="swiper-slide" style="background-image: url(./4.jpg);"></div>
+        <div class="swiper-slide" style="background-image: url(./6.jpg);"></div>
+        <div class="swiper-slide" style="background-image: url(./sl3.jpeg);"></div>
       </div>
-      <div class="nav-buttons">
-        <button class="nav-button" onclick="prevSlide()">❮</button>
-        <button class="nav-button" onclick="nextSlide()">❯</button>
-      </div>
-      <div class="carousel-nav">
-        <span class="carousel-dot" onclick="currentSlide(1)"></span>
-        <span class="carousel-dot" onclick="currentSlide(2)"></span>
-        <span class="carousel-dot" onclick="currentSlide(3)"></span>
-        <span class="carousel-dot" onclick="currentSlide(4)"></span>
-        <span class="carousel-dot" onclick="currentSlide(5)"></span>
-      </div>
+      <!-- Switched position of previous and next buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
-
+  
   <div id="about-us-section">
-    <div id="about-us-heading">About Us</div>
-    <h2>Welcome to Joys Homes & Developers</h2>
-    <p>Where we transform dreams into sustainable, eco-friendly realities.</p>
-    <p>At Joys Homes & Developers, we understand that a home is more than just bricks and mortar; it's a sanctuary where memories are made, families thrive, and dreams come to life.</p>
-    <p>In addition to our eco-friendly focus, Joys Homes & Developers takes pride in making quality homes accessible to everyone.</p>
-    <p>Our budget-friendly approach doesn't compromise on the superior craftsmanship and attention to detail that define our work.</p>
-    <p>We believe that every individual deserves a home that reflects their lifestyle without breaking the bank, and we strive to make that a reality for our clients.</p>
-    <h2>Join us on a journey</h2>
-    <p>To create homes that are not only structurally sound but also environmentally responsible and economically feasible.</p>
-    <p>Joys Homes & Developers is not just a construction company; we are your partners in building a brighter, sustainable future.</p>
-    <p>Experience the joy of living in a home that reflects your values – join hands with us at Joys Homes & Developers, where dreams find their foundation.</p>
-  </div>
+    <div class="header">
+      <!-- Content before waves -->
+      <div class="inner-header flex">
+        <!-- Just the logo.. Don't mind this -->
+        <h1 class="abt">Let's Get To Know Us Better</h1>
+      </div>
+      <!-- Waves Container -->
+      <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#DED0B6" />
+          </g>
+        </svg>
+      </div>
+      <!-- Waves end -->
+    </div>
+    <!-- Header ends -->
+    <!-- Content starts -->
+    <img src="./greencity.png" class="right-img">
+    <h1 class="sanctuary">
+      "Crafting<span class="families"> Joy</span> In Each Brick,<br>
+      And Redefining Quality Living.<br>
+      <span class="italic">Welcome to the</span><span class="families"> Joys Homes !</span><br> 
+    </h1>
+
+    <p class="welcome">Home is a santuary where memories are made,families thrive and dreams come true,where we transform dreams into sustainable, eco-friendly realities.
+    we understand that a home is more than just bricks and mortar.
+    In addition to our eco-friendly focus, We takes pride in making quality homes accessible to everyone.
+    Our budget-friendly approach doesn't compromise on the superior craftsmanship and attention to detail that define our work.
+    We believe that every individual deserves a home that reflects their lifestyle without breaking the bank, and we strive to make that a reality for our clients.<br></p>
+    <p class="join">Join us on our journey, To create homes that are not only structurally sound but also environmentally responsible and economically feasible.
+    Joys Homes & Developers is not just a construction company; we are your partners in building a brighter, sustainable future.
+    Experience the joy of living in a home that reflects your values – join hands with us, where dreams find their foundation.</p>
+    
+ </div> 
 
   <div id="counter-section">
-    <div class="counter-item">
-      <i class="counter-icon fas fa-handshake"></i>
-      <div class="counter-number" id="yearsOfTrust">24</div>
-      <div class="counter-heading">Years of Trust</div>
-    </div>
-    <div class="counter-item">
-      <i class="counter-icon fas fa-check-circle"></i>
-      <div class="counter-number">47+</div>
-      <div class="counter-heading">Completed Projects</div>
-    </div>
-    <div class="counter-item">
-      <i class="counter-icon fas fa-cog"></i>
-      <div class="counter-number">2</div>
-      <div class="counter-heading">Ongoing Projects</div>
-    </div>
-  </div>
+    <div class="counter">
+       <div class="card" id="yearsCard">
+         <i class="fas fa-handshake"></i>
+         <h3 class="heading3">Years of Trust</h3>
+         <p id="years">0</p>
+       </div>
+       <div class="card plus" id="projectsCard">
+         <i class="fas fa-tasks"></i>
+         <h3 class="heading3">Projects Completed</h3>
+         <p id="projects">0+</p>
+       </div>
+       <div class="card" id="ongoingCard">
+         <i class="fas fa-cog"></i>
+         <h3 class="heading3">Ongoing Projects</h3>
+         <p id="ongoing">0</p>
+       </div>
+    </div> 
+   </div>
 
   <div id="projects">
-    <div style="text-align: center; padding: 30px;">
-      <h2>Our Projects</h2>
-      <div class="gallery-container">
-        <!-- Placeholder images for the initial 9 images -->
-        <img class="gallery-image" src="./g12.jpg" alt="Project 1" height="216.69" onclick="openModal('./g12.jpg')">
-        <img class="gallery-image" src="./ours.jpg" alt="Project 2" onclick="openModal('./ours.jpg')">
-        <img class="gallery-image" src="./chungam.jpg" alt="Project 3" onclick="openModal('./chungam.jpg')">
-        <img class="gallery-image" src="./nadathra.jpg" alt="Project 4" onclick="openModal('./nadathra.jpg')">
-        <img class="gallery-image" src="./g41.jpg" alt="Project 5" onclick="openModal('./g41.jpg')">
-        <img class="gallery-image" src="g18.jpg" alt="Project 6"  onclick="openModal('./g18.jpg')">
-        <img class="gallery-image" src="g19.jpg" alt="Project 7"  onclick="openModal('./g19.jpg')">
-        <img class="gallery-image" src="g39.jpg" alt="Project 8"  onclick="openModal('./g39.jpg')">
-        <img class="gallery-image" src="g40.jpg" alt="Project 9"  onclick="openModal('./g40.jpg')">
-        <img class="gallery-image" src="g1.jpg" alt="Project 10"  onclick="openModal('./g1.jpg')">
-        <img class="gallery-image" src="g13.jpg" alt="Project 11"  onclick="openModal('./g13.jpg')">
-        <img class="gallery-image" src="g24.jpg" alt="Project 12" onclick="openModal('./g24.jpg')">
-        <img class="gallery-image" src="g16.jpg" alt="Project 13"  onclick="openModal('./g16.jpg')">
-        <img class="gallery-image" src="./g22.jpg" alt="Project 14" onclick="openModal('./g22.jpg')">
-        <img class="gallery-image" src="./g29.jpg" alt="Project 15" onclick="openModal('./g29.jpg')">
-        <img class="gallery-image" src="./g2.jpg" alt="Project 16" onclick="openModal('./g2.jpg')">
-        <!-- Additional images will be added dynamically when clicking "Show More" -->
-      </div>
-      <button id="showMoreBtn" onclick="showMore()">Show More</button>
+    <h2 class="heading">Our Projects</h2>
+    <div class="swiper-container mySwiper2">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+             <div class="swiper-slide"><img src="./g12.jpg" alt="Image 1"></div>
+             <div class="swiper-slide"><img src="./nadathra.jpg" alt="Image 2"></div>
+             <div class="swiper-slide"><img src="./g13.jpg" alt="Image 3"></div>
+             <div class="swiper-slide"><img src="./g18.jpg" alt="Image 4"></div>
+             <div class="swiper-slide"><img src="./g8.jpg" alt="Image 5"></div>
+             <!-- Additional slides here -->
+          </div>
+         <!-- Add Pagination -->
+      <div class="swiper-pagination"></div> 
+      <!-- Add Navigation -->
+      <div class="swiper-button-prev"></div> 
+      <div class="swiper-button-next"></div>
+      <div class="left-arrow" >
+        <button class="button-prev"> 
+          <img src="./arrow-left.svg" alt="left">
+        </button> 
+      </div>   
+      <div class="right-arrow" >
+        <button class="button-next"> 
+          <img src="./arrow-right.svg" alt="right">
+        </button> 
+      </div>   
     </div>
   </div>
 
@@ -157,9 +198,9 @@
       <!-- Contact Information Column -->
       <div class="contact-column">
         <div class="contact-info">
-          Joys Homes & Developers<br>
+          <p class="info">Homes & Developers<br>
           Aranattukara, Thrissur<br>
-          Kerala, India
+          Kerala, India</p>
         </div>
         <div class="social-icons">
           <a href="https://wa.me/your-whatsapp-number" target="_blank"><i class="social-icon fab fa-whatsapp"></i></a>
@@ -168,15 +209,8 @@
           <a href="https://www.facebook.com/your-facebook-page" target="_blank"><i class="social-icon fab fa-facebook"></i></a>
         </div>
       </div>
-
-     <!-- The Modal -->
-  <div id="imageModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-      <img id="modalImage" src="" alt="Project Image">
     </div>
-  </div> 
-
+  
   <!-- Social Media Links -->
   <div class="social-links">
     <a href="https://wa.me/your-whatsapp-number" target="_blank" class="social-link">
@@ -192,12 +226,14 @@
       <i class="fab fa-facebook"></i>
     </a>
   </div>
-
+</div>
   <footer style="text-align: center; padding: 15px; background-color: #f5f5f5;; color: #888;">
-    &copy; Joys Homes & Developers - <span id="currentYear"></span>
+    &copy; Joys Homes & Developers - <span id="currentYear">2024</span>
   </footer>
  </div>  
-</div>
- <script src="script.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> 
+<script src="script.js"></script>
 </body>
 </html>
